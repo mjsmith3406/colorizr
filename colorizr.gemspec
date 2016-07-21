@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'colorizer'
+  s.name        = 'colorizr'
   s.version     = '0.0.2'
   s.date        = '2016-07-20'
   s.summary     = 'Colors'

@@ -1,12 +1,10 @@
-require 'colorizr'
-
-@@color_array = [{color: :red, number: 31}, {color: :green, number: 32}, {color: :yellow, number: 33},
-  {color: :blue, number: 34}, {color: :pink, number: 36}, {color: :light_blue, number: 94},
-  {color: :white, number: 97}, {color: :light_gray, number: 37}, {color: :black, number: 30}]
-
 class String
+  @@color_array = [{color: :red, number: 31}, {color: :green, number: 32}, {color: :yellow, number: 33},
+    {color: :blue, number: 34}, {color: :pink, number: 36}, {color: :light_blue, number: 94},
+    {color: :white, number: 97}, {color: :light_gray, number: 37}, {color: :black, number: 30}]
+
   def self.colors
-    color_array.each do |color|
+    @@color_array.each do |color|
       puts color[:color]
     end
   end
@@ -20,7 +18,7 @@ class String
     @@color_array.each do |color|
       method_text = %Q{
         def #{color[:color]}
-          "\e[#{color[:number]}m" + self + "\e[0m"
+          puts "\e[#{color[:number]}m" + self + "\e[0m"
         end
       }
       class_eval(method_text)
