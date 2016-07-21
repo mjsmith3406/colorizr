@@ -1,0 +1,10 @@
+My gem takes advantage of Rubys meta-programming by making it easier to write its own code
+to make the users experience easier and making the code dry.
+
+It took me about a day in a half to do this project. I was and am have difficulty with this.
+I understand the idea of it but implementing it is difficult to do.
+
+The most rewarding part is learning that this exist and having a base understanding of it
+
+I have a lot of room to grow on this subject. I do not fully grasp the idea of all this but
+came out with enough information to get by.
