@@ -13,7 +13,7 @@ class String
 
   def self.sample_colors
     @@color_array.each do |color|
-      puts "\e[#{color[:number]}mThis is #{color[:color]}.\e[0m"
+      puts "This is #{color[:color]}".send(color[:color])
     end
   end
   def self.create_colors
